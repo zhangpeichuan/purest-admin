@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KingdeeDiyWebApiClient\KingdeeDiyWebApiClient.csproj" />
+    <ProjectReference Include="..\PurestAdmin.Application\PurestAdmin.Application.csproj" />
+    <ProjectReference Include="..\PurestAdmin.Core\PurestAdmin.Core.csproj" />
+    <ProjectReference Include="..\PurestAdmin.Multiplex\PurestAdmin.Multiplex.csproj" />
+    <ProjectReference Include="..\PurestAdmin.SqlSugar\PurestAdmin.SqlSugar.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PrdinstockServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="YiKdWebClient" Version="1.0.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS">
+      <HintPath>.net6.0_sdk_v8.0.6\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.CDP.WebApi.SDK">
+      <HintPath>.net6.0_sdk_v8.0.6\Kingdee.CDP.WebApi.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>.net6.0_sdk_v8.0.6\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
