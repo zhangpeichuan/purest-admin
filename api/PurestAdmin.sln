@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurestAdmin.SqlSugar", "Pur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurestAdmin.Multiplex.Contracts", "PurestAdmin.Multiplex.Contracts\PurestAdmin.Multiplex.Contracts.csproj", "{F163FBE7-67FE-4791-9481-BA5E8C19701C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurestAdmin.Zero", "PurestAdmin.Zero\PurestAdmin.Zero.csproj", "{11828185-B722-419A-BF30-CB88FA6D0DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurestAdmin.Zero", "PurestAdmin.Zero\PurestAdmin.Zero.csproj", "{11828185-B722-419A-BF30-CB88FA6D0DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurestAdmin.BackgroundService", "PurestAdmin.BackgroundService\PurestAdmin.BackgroundService.csproj", "{7E7B7A8C-AC37-48F3-97F5-DC5AAC65620B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurestAdmin.BackgroundService", "PurestAdmin.BackgroundService\PurestAdmin.BackgroundService.csproj", "{7E7B7A8C-AC37-48F3-97F5-DC5AAC65620B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YS.Application.KingDee", "YS.Application.KingDee\YS.Application.KingDee.csproj", "{4243466C-C6DC-41E6-BDAD-E921193DF1FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingdeeDiyWebApiClient", "KingdeeDiyWebApiClient\KingdeeDiyWebApiClient.csproj", "{FFA32DBC-8F4B-4482-A0D5-B94762F6B108}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{7E7B7A8C-AC37-48F3-97F5-DC5AAC65620B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7B7A8C-AC37-48F3-97F5-DC5AAC65620B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7B7A8C-AC37-48F3-97F5-DC5AAC65620B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4243466C-C6DC-41E6-BDAD-E921193DF1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4243466C-C6DC-41E6-BDAD-E921193DF1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4243466C-C6DC-41E6-BDAD-E921193DF1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4243466C-C6DC-41E6-BDAD-E921193DF1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA32DBC-8F4B-4482-A0D5-B94762F6B108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA32DBC-8F4B-4482-A0D5-B94762F6B108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA32DBC-8F4B-4482-A0D5-B94762F6B108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA32DBC-8F4B-4482-A0D5-B94762F6B108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

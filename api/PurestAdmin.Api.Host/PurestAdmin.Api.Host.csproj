@@ -8,11 +8,21 @@
     <NoWarn>1701;1702;1591;8618;8601;</NoWarn>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+    <Deterministic>True</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Deterministic>True</Deterministic>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\PurestAdmin.Application\PurestAdmin.Application.csproj" />
     <ProjectReference Include="..\PurestAdmin.Core\PurestAdmin.Core.csproj" />
     <ProjectReference Include="..\PurestAdmin.Multiplex.Contracts\PurestAdmin.Multiplex.Contracts.csproj" />
     <ProjectReference Include="..\PurestAdmin.Multiplex\PurestAdmin.Multiplex.csproj" />
+    <ProjectReference Include="..\YS.Application.KingDee\YS.Application.KingDee.csproj" />
   </ItemGroup>
 
 </Project>

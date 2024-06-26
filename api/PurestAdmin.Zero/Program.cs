@@ -3,7 +3,7 @@
 using Microsoft.Extensions.DependencyInjection;
 
 using PurestAdmin.Zero;
-
+using PurestAdmin.Zero.KingDee;
 using Volo.Abp;
 
 var app = await AbpApplicationFactory.CreateAsync<AdminZeroModule>();
@@ -11,7 +11,7 @@ var app = await AbpApplicationFactory.CreateAsync<AdminZeroModule>();
 await app.InitializeAsync();
 while (true)
 {
-    string[] operatorArr = ["初始化种子数据", "Entity代码生成", "Service代码生成"];
+    string[] operatorArr = ["初始化种子数据", "Entity代码生成", "Service代码生成","金蝶生产入库单报表汇总"];
     Console.WriteLine("------请选择您要做的事-------");
     for (int i = 0; i < operatorArr.Length; i++)
     {
@@ -31,6 +31,10 @@ while (true)
         case "2":
             var autoService = app.Services.GetRequiredService<AutoService>();
             autoService.Initialization();
+            break;
+        case "3":
+            var kingDeeService = app.Services.GetRequiredService<KingDeeService>();
+            await kingDeeService.Initialization();
             break;
         default:
             Console.WriteLine("未进行任何操作！");

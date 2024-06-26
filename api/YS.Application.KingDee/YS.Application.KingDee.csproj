@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="PrdinstockServices\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="YiKdWebClient" Version="1.0.0.7" />
   </ItemGroup>
 

@@ -23,13 +23,15 @@ using Volo.Abp.Json;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.VirtualFileSystem;
+using YS.Application.KingDee;
 
 namespace PurestAdmin.Api.Host
 {
     [DependsOn(typeof(AbpSwashbuckleModule),
         typeof(AbpAutofacModule),
         typeof(AdminCoreModule),
-        typeof(AdminAppModule))]
+        typeof(AdminAppModule),
+        typeof(AppKingDeeModule))]
     public class AdminHostModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
